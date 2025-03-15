@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الذكرى - سوريا الحرة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #C5A467;
+            --crimson: #8A1538;
+            --slate: #2D2D2D;
+            --ivory: #F9F6F0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Noto Naskh Arabic', serif;
+        }
+
+        body {
+            background: var(--ivory);
+            color: var(--slate);
+            line-height: 1.8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(rgba(23, 75, 34, 0.95), rgba(22, 61, 29, 0.95)),
+                        url('texture.png');
+            color: var(--ivory);
+            border-bottom: 4px solid var(--gold);
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin: 3rem 0;
+            padding: 2rem;
+        }
+
+        .timeline-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: -2rem;
+            height: 2px;
+            width: 4rem;
+            background: var(--gold);
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .date {
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .time {
+            font-size: 1.2rem;
+            color: var(--ivory);
+            background: var(--crimson);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+        }
+
+        .gallery {
+            max-width: 1400px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .video-wrapper:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .simple-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #FF1165;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+            }
+
+            .timeline-item::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 style="font-size: 2.8rem; margin-bottom: 1rem;">ذكرى انطلاق الثورة السورية</h1>
+        <p style="font-size: 1.2rem; color: var(--gold);"> أربعة عشر ربيعا انقضى على انطلاق أولى صرخات الحرية <br>
+            أربعة عشرا من الدماء والشهداء وصرخات الثكالى واليتامى والجروح الغائرة <br>
+           وها نحن اليوم وورود الياسمين لأول مرة نشهد ذكرى انتفاضتنا منتصرين<br></p>
+           
+        <p style="font-size: 1.2rem; color: var(--gold);">15 مارس 2011 - 8 ديسمبر 2024</p>
+        
+        <p style="font-size: 1.2rem; color: var(--gold);"> <br>شاركنا فرحة النصر: <br></p>
+        <div class="button-container">
+            <a href="https://tellonym.me/H104_" class="simple-button" target="_blank">
+                    tellonym
+            </a>
+        </div>
+    </header>
+    
+    <div class="gallery">
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/xoWLFLkRC5E?si=pOk4AhbtVOtXSgDC&amp;controls=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/OHe9F52jAPs?si=5quWGxr-5VUHYGzb&amp;controls=0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/ONYnB40QgP0?si=Hm0oeaSuSFU0NmX6&amp;controls=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/d0c44uh1d_A?si=ex5VO6v8CoN9luXZ&amp;controls=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/TOKzIoLm_o8?si=WYjKivILP8KqdAWK&amp;controls=0" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/RcK7yL1k1ts?si=XK8jQPY59-wCMSEH&amp;controls=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/0iHtmuTvcvo?si=aK3BfJvqCAq3P4ca&amp;controls=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/MFdFUR3xEuo?si=lSfVHP5mYWVwmrhW&amp;controls=0" allowfullscreen></iframe>
+        </div>
+
+
+
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/m62ZGavdj-8" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/-iWCRJTww4Q?si=tAs2IKqXDWmPfuM_" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/EBtfvmhkFyw?" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/LQ2NoAVLEak?si=i0CfOQnf9Q-m8kgV&amp;controls=0" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/cukpSkBlq_0?si=ez5s_lekGdSYf6oL" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/VDT_It03lMI?si=RTBs5s7kueEM5rNr" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/videoseries?si=zDok4_EQK8usXNw8&amp;list=PLO7nbsS9Q8mFZS35jroPGKPVpaxcjZsBW" allowfullscreen></iframe>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/videoseries?si=5Tm52yENbImusR1z&amp;controls=0&amp;list=PLqexF0f5B8ukcLaj4qcCNgByJ0nsj023F" allowfullscreen></iframe>
+        </div>
+
+
+
+
+        
+        <!-- Add more videos -->
+    </div>
+
+
+    
+</body>
+</html>
